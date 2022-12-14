@@ -17,7 +17,7 @@
       const params = Object.fromEntries(urlSearchParams.entries());
       const text = `Boas-vindas a Heineken! O que eu posso fazer por você hoje?`
 
-      await new Promise(r => setTimeout(r, 5000));
+      await new Promise(r => setTimeout(r, 2000));
 
       window.location.href = `https://wa.me/+55${params.number}?text=${encodeURIComponent(text)}`;
     })()
