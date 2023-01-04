@@ -10,20 +10,6 @@
   <link rel="icon" href="images/icon.png" />
   <title>Heineken</title>
 
-
-  <script>
-    (async () => {
-      const urlSearchParams = new URLSearchParams(window.location.search);
-      const params = Object.fromEntries(urlSearchParams.entries());
-      const text = `Boas-vindas a Heineken! O que eu posso fazer por você hoje?`
-
-      await new Promise(r => setTimeout(r, 2000));
-
-      window.location.href = `https://wa.me/+55${params.number}?text=${encodeURIComponent(text)}`;
-    })()
-
-  </script>
-
 </head>
 
 <body>
@@ -31,10 +17,10 @@
     <div class="navbar">
       <div class="logo"><img src="images/logo.png" /></div>
       <ul class="menu">
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Mercado</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contao</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre nós</a></li>
+        <li><a href="#policy">Política De Privacidade</a></li>
+        <li><a href="#">Contato</a></li>
         <div class="close-btn">
           <i class="fas fa-times"></i>
         </div>
@@ -43,22 +29,40 @@
     <div class="menu-btn">
       <i class="fas fa-bars"></i>
     </div>
+    <div class="zap-btn">
+      <img width="50px" height="50px" src="./images/zap.png" />
+    </div>
   </nav>
-  <section>
+
+  <section class="accept_terms">
+    <div class="content">
+      <div class="image_logo">
+        <img src="./images/logofooter.svg" alt="Logo Grupo Heineken">
+      </div>
+
+      <div class="_message">
+        <h2>Nós apoiamos o consumo responsável</h2>
+        <p>Você tem mais de 18 anos?</p>
+      </div>
+
+      <div class="message_refused">
+        <h2>Você ainda não pode entrar.</h2>
+        <p>Você precisa ter 18 ou mais anos para acessar nosso conteúdo</p>
+      </div>
+
+      <div class="box_btn">
+        <a class="btn_accept_term">Sim</a>
+        <a class="btn_refused_term">Não</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="main" id="home">
     <div class="imgbx">
-      <img src="images/beer.png" alt="" />
+      <img src="images/beer.png" alt="garraga cerveja" />
     </div>
     <div class="content">
       <div>
-        <div class="loading_page">
-          <p>Você está sendo redirecionado ...</p>
-        </div>
-        <h2>
-          Nós apoiamos <br />
-          apoiamos<br />
-          o consumo <br />
-          responsável
-        </h2>
         <h1>Heineken</h1>
         <p>
           De fato, a cerveja como Gerard Adriaan Heineken queria, feita com
@@ -67,20 +71,173 @@
           técnica deste ingrediente especial para obter o melhor sabor para
           a cerveja.
         </p>
-        <ul class="social">
-          <li>
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-        </ul>
+        <p class="zap-btn2">
+          Ver Catálogos do Preços
+        </p>
       </div>
     </div>
   </section>
+
+  <section class="main" id="about">
+    <div class="content">
+      <div class="about_body" style="display: flex;">
+        <div class="about_info">
+          <h1>Esse é o nosso sonho</h1>
+          <p>
+            e o que direciona nosso jeito de fazer negócio no Brasil. Para alcançar cada coração, buscamos ir além da
+            presença em momentos de consumo das nossas marcas. Todos os dias, buscamos construir relações de respeito e
+            confiança com cada pessoa que se conecta com o Grupo HEINEKEN: nosso time, nossos parceiros e clientes e
+            toda
+            a
+            sociedade.
+          </p>
+        </div>
+        <div class="about_video_message">
+          <iframe width="100%" height="624" src="https://www.youtube.com/embed/0AvTQmANru4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main" id="policy">
+    <div class="content">
+      <div class="about_body" style="display: flex;">
+        <div class="about_info">
+          <h1>Política De Privacidade</h1>
+          <ul>
+            <li>
+              1) Políticas gerais
+
+              As políticas de privacidade Bebidas em Casa, baseiam-se nos princípios do seu compromisso com a
+              transparência e o respeito nas relações para com seus clientes e visitantes. Essa empresa preocupa-se com
+              a
+              privacidade e a segurança de seus clientes e dos visitantes de seu portal e garante a proteção das
+              informações pessoais de todos aqueles que o acessam. Ao visitar a Bebidas em Casa, o usuário aceita as
+              condições previstas nesta política e entende que as medidas de segurança relativas à internet não são
+              integralmente infalíveis.
+            </li>
+            <li>
+              2) Privacidade dos dados cadastrais e tratamento das informações coletadas
+
+              As informações solicitadas dos clientes e usuários são as mínimas necessárias para que aconteça as
+              prestações de serviços ou vendas de produtos, entre essa empresa e seu cliente.
+
+              As informações coletadas mediante o uso de cookies e a identificação de endereços IP são genéricas e
+              usadas
+              em conjunto, para fins estatísticos e para a melhoria da comunicação com os visitantes. Caso deseje, o
+              visitante pode configurar seu navegador de internet para rejeitar a coleta automática dessas informações.
+              No
+              entanto, algumas ações como acesso a áreas restritas e compra de produtos só são possíveis com a
+              utilização
+              desses mecanismos. O visitante entende que ao desabilitar os cookies, ele não poderá efetuar diversas
+              ações
+              na loja Bebidas em Casa.
+
+              As informações pessoais dos clientes e visitantes coletadas na Bebidas em Casa são guardadas de acordo com
+              padrões rígidos de confidencialidade e segurança e não são repassadas a terceiros, exceto se expressamente
+              autorizado pelo cliente ou por força de lei.
+
+              O cliente pode, a qualquer tempo, corrigir ou atualizar as informações, bem como demais dados cadastrais
+              fornecidos para a loja virtual. Os campos em que não houver indicação de obrigatoriedade são de
+              preenchimento voluntário, sem que sua falta implique diminuição da qualidade ou quantidade dos serviços
+              correspondentes.
+            </li>
+            <li>
+              3) Envio de e-mails
+
+              A Bebidas em Casa envia e-mails aos seus clientes sempre que um evento ocorrer, como um novo cadastro, a
+              conclusão de uma compra, a confirmação de pagamento ou o envio de um pedido. O cliente deve providenciar
+              os
+              meios para que essas comunicações sejam efetivamente entregues, como por exemplo, adicionar o endereço de
+              nossa loja virtual em seu filtro anti spam. Eventuais comunicações com os clientes referentes a dúvidas
+              sobre os pedidos também serão feitas por e-mail.
+
+              A empresa pode ainda enviar promocionais desde que solicitados pelo cliente no momento do cadastro. Caso
+              deseje deixar de receber esses e-mails, o cliente pode solicitar o descadastramento a qualquer tempo: em
+              sua
+              área restrita; através do link “Desinscrever-se”, que acompanha os e-mails; ou ainda entrando em contato
+              por
+              telefone com a loja virtual.
+            </li>
+            <li>
+              4) Segurança
+
+              A loja virtual garante a segurança no acesso aos web sites dessa empresa, nas transações e na troca de
+              informações reservadas com os clientes e visitantes, em áreas específicas, por meio do processo de
+              criptografia dos dados, utilizando-se do protocolo de segurança Secure Socket Layers (SSL). Esse sistema é
+              composto por certificação que comprova a autenticidade da loja virtual, bem como garante a integridade e a
+              confidencialidade dos dados durante a sua transmissão.
+
+              Essa camada de segurança está disponível nas áreas sensíveis da loja virtual, como telas de login, áreas
+              restritas e páginas de checkout e pagamento. Nessas páginas, é possível observar o protocolo HTTPS no
+              endereço URL, bem como o símbolo do cadeado fechado no alto do navegador. Caso essas duas condições não
+              estejam presentes, o visitante entende que não deve prosseguir com a operação e solicita-se que envie um
+              e-mail para a loja virtual, no sentido de informar e auxiliar na correção do problema.
+
+              Ao cadastrar-se na loja virtual, o cliente entende que o acesso é feito mediante logins e senhas
+              individuais, de uso pessoal, intransferível e de conhecimento exclusivo do respectivo usuário. Os clientes
+              e
+              usuários responsabilizam-se por si, seus empregados e/ou prepostos pelo resguardo de suas senhas, não as
+              repassando a terceiros.
+            </li>
+            <li>
+              5) Direitos
+
+              Todos os textos, imagens, sons e/ou aplicativos exibidos na loja virtual são protegidos pelos direitos
+              autorais, não sendo permitido modificar, reproduzir, armazenar, transmitir, copiar, distribuir ou utilizar
+              esses recursos de quaisquer outras formas para fins comerciais sem o consentimento prévio e formal da
+              empresa.
+            </li>
+            <li>
+              6) Arrependimento
+
+              Aos clientes dos serviços de informação da loja virtual, fica assegurado o direito de arrependimento, no
+              prazo de sete dias contados do recebimento dos produtos, conforme protocolo de entrega, independentemente
+              de
+              qualquer justificativa, devendo ser comunicado imediatamente via e-mail, disponível em nossa página de
+              atendimento. Esse e-mail deverá ser armazenado em sua máquina, de modo que a data de envio possa ser
+              utilizada em caso de perda do arquivo.
+
+              No caso do arrependimento, o cliente deverá enviar o produto de volta à empresa, conforme instruções
+              recebidas, arcando com os custos do envio do produto. Após o recebimento e a verificação de que o produto
+              encontra-se nas mesmas condições de envio, sem uso, a loja virtual providenciará o reembolso em até
+              quatorze
+              dias contados da data do retorno do produto.
+
+              O usuário está ciente de que o direito ao arrependimento, estabelecido pelo artigo 49 da Lei 8.078/1990,
+              somente poderá ser exercido dentro do prazo especificado acima mencionado, responsabilizando-se por
+              informar
+              os dados completos e corretos da conta bancária nos casos em que o método de pagamento utilizado tenha
+              sido
+              diferente do cartão de crédito.
+            </li>
+            <li>
+              7) Recomendações
+
+              Estas políticas, ora estabelecidas, estão sujeitas a alterações, a qualquer tempo, devido a mudanças na
+              loja
+              virtual ou nos websites a ela associados, à utilização de novas tecnologias ou sempre que a empresa julgar
+              necessário, motivos pelos quais devem ser periodicamente verificadas.
+
+              O usuário compromete-se a utilizar o serviço em conformidade com a lei, com os respectivos regulamentos,
+              com
+              os princípios da moral, dos bons costumes e de acordo com a ordem pública.
+            </li>
+            <li>
+              8) Atendimento
+
+              Os clientes do podem utilizar os canais de atendimento apresentados no rodapé do site.
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="main.js"></script>
 </body>
 

@@ -4,14 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.message_refused {
+  display: none;
+}
+
 nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 20px 0;
   z-index: 998;
   transition: all 0.3s ease;
   font-family: gothambook;
 }
+
 nav .navbar {
   width: 90%;
   display: flex;
@@ -21,6 +27,7 @@ nav .navbar {
   text-transform: uppercase;
   font-weight: 700;
 }
+
 nav .navbar .logo img {
   width: 118px;
 }
@@ -29,10 +36,12 @@ nav .navbar .menu {
   display: flex;
   position: relative;
 }
+
 nav .navbar .menu li {
   list-style: none;
   margin: 0 15px;
 }
+
 .navbar .menu a {
   font-size: 18px;
   font-weight: 500;
@@ -52,9 +61,11 @@ nav .menu-btn,
   transition: all 0.3s ease;
   display: none;
 }
+
 nav .menu-btn {
   color: #ffffff;
 }
+
 .navbar .menu .close-btn {
   color: #007125;
 }
@@ -62,6 +73,24 @@ nav .menu-btn {
 .navbar .menu .menu-btn {
   color: #ffffff;
 }
+
+nav .zap-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.zap-btn2 {
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 41% !important;
+  cursor: pointer;
+}
+
 section {
   position: relative;
   width: 100%;
@@ -72,6 +101,7 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+
 section::before {
   content: "";
   position: absolute;
@@ -79,14 +109,13 @@ section::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle,
-    rgba(40, 193, 2, 1) 0%,
-    rgba(0, 113, 37, 1) 40%
-  );
+  background: radial-gradient(circle,
+      rgba(40, 193, 2, 1) 0%,
+      rgba(0, 113, 37, 1) 40%);
   clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
   box-shadow: -19px 2px 11px -3px rgba(0, 0, 0, 0.69);
 }
+
 section .content {
   position: relative;
   width: 40%;
@@ -102,6 +131,7 @@ section .content h2 {
   text-align: justify;
   margin-bottom: 25px;
 }
+
 section .content h1 {
   color: #fff;
   font-size: 3em;
@@ -109,26 +139,133 @@ section .content h1 {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+
 section .imgbx {
   position: absolute;
   left: 35%;
 }
+
 section .imgbx img {
   max-height: 650px;
 }
+
 section .content p {
   color: #fff;
   font-size: 1.2em;
   text-align: justify;
   width: 80%;
 }
+
+.accept_terms {
+  background: url(images/grafismo.webp) no-repeat;
+}
+
+.accept_terms::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle,
+      rgba(40, 193, 2, 1) 0%,
+      rgba(0, 113, 37, 1) 40%);
+  clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+  box-shadow: -19px 2px 11px -3px rgba(0, 0, 0, 0.69);
+}
+
+.accept_terms .content h2 {
+  color: #007125;
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.accept_terms .content p {
+  color: #007125;
+}
+
+.accept_terms .content a {
+  border: 1px solid #288154;
+  color: #288154;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accept_terms .content a:hover {
+  background-color: #eee
+}
+
+#about {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle,
+      rgba(40, 193, 2, 1) 0%,
+      rgba(0, 113, 37, 1) 40%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  box-shadow: -19px 2px 11px -3px rgba(0, 0, 0, 0.69);
+}
+
+#policy {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#policy ul {
+  color: #fff;
+  width: 90%;
+}
+
+#policy ul li {
+  margin-bottom: 10px;
+}
+
+#policy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle,
+      rgba(40, 193, 2, 1) 0%,
+      rgba(0, 113, 37, 1) 40%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  box-shadow: -19px 2px 11px -3px rgba(0, 0, 0, 0.69);
+}
+
+.box_btn {
+  margin-top: 30px;
+}
+
 .social {
   color: #fff;
   display: flex;
 }
+
 .social li {
   list-style: none;
 }
+
 .social li a i {
   text-decoration: none;
   color: #fff;
@@ -137,10 +274,65 @@ section .content p {
   padding: 20px 0;
   font-size: 30px;
 }
+
+section {
+  animation: fadein 600ms;
+  -moz-animation: fadein 600ms;
+  -webkit-animation: fadein 600ms;
+  -o-animation: fadein 600ms;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1500px) {
   nav .navbar {
     width: 90%;
   }
+
   nav .navbar .menu {
     position: fixed;
     left: -100%;
@@ -154,9 +346,11 @@ section .content p {
     align-items: center;
     transition: all 0.5s ease;
   }
+
   .navbar.active .menu {
     left: 0;
   }
+
   nav .navbar .menu a {
     font-size: 23px;
     display: block;
@@ -164,9 +358,11 @@ section .content p {
     font-weight: 700;
     margin: 10px 0;
   }
+
   nav .menu-btn {
     top: 30%;
   }
+
   nav .menu-btn,
   .navbar .menu .close-btn {
     display: block;
@@ -178,14 +374,35 @@ section .content p {
     box-sizing: border-box;
   }
 
+  #policy .content {
+    left: 2%;
+    width: 100%;
+  }
+
+  #about .content {
+    left: 2%;
+    width: 100%;
+  }
+
+  #about .content .about_body .about_info {
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  #about .content .about_body .about_video_message {
+    width: 60%;
+  }
+
   section .imgbx {
     position: absolute;
     left: 510px;
   }
+
   section .imgbx img {
     max-height: 700px;
   }
 }
+
 @media (max-width: 1450px) {
   section .imgbx {
     position: absolute;
@@ -193,37 +410,43 @@ section .content p {
     margin-top: 50px;
   }
 }
+
 @media (max-width: 1375px) {
   section .imgbx {
     position: absolute;
     left: 450px;
   }
 }
+
 @media (max-width: 1320px) {
   section .imgbx {
     position: absolute;
     left: 0%;
   }
 }
+
 @media (max-width: 825px) {
+
+  .accept_terms::before {
+    background: none;
+  }
+
   section {
     flex-direction: column;
     justify-content: center;
-    background: radial-gradient(
-      circle,
-      rgba(40, 193, 2, 1) 0%,
-      rgba(0, 113, 37, 1) 40%
-    );
+    background: radial-gradient(circle,
+        rgba(40, 193, 2, 1) 0%,
+        rgba(0, 113, 37, 1) 40%);
   }
+
   section::before {
     clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 70%);
-    background: radial-gradient(
-      circle,
-      rgba(40, 193, 2, 1) 0%,
-      rgba(0, 113, 37, 1) 40%
-    );
+    background: radial-gradient(circle,
+        rgba(40, 193, 2, 1) 0%,
+        rgba(0, 113, 37, 1) 40%);
     background-size: cover;
   }
+
   section .content {
     position: relative;
     width: 100%;
@@ -231,14 +454,17 @@ section .content p {
     left: 0;
     padding: 40px;
   }
+
   section .imgbx {
     position: relative;
   }
+
   section .imgbx img {
     max-height: 650px;
     margin-top: 20%;
   }
 }
+
 @media (max-width: 480px) {
   section .content {
     position: relative;
@@ -247,26 +473,49 @@ section .content p {
     left: 0;
     padding: 20px;
   }
+
   section .imgbx {
     position: relative;
   }
+
   section .imgbx img {
     margin-top: 30%;
     max-height: 480px;
   }
+
+  #about .content {
+    left: 0%;
+  }
+
+  #about .content .about_body {
+    flex-direction: column;
+  }
+
+  #about .content .about_body .about_info {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  #about .content .about_body .about_video_message {
+    width: 100%;
+  }
+
   section .content p {
     color: #fff;
     font-size: 1.2em;
     text-align: justify;
     width: 100%;
   }
+
   .social {
     color: #fff;
     display: flex;
   }
+
   .social li {
     list-style: none;
   }
+
   .social li a i {
     text-decoration: none;
     color: #fff;
@@ -274,5 +523,15 @@ section .content p {
     margin-top: 20px;
     padding: 20px 0;
     font-size: 30px;
+  }
+
+  .zap-btn2 {
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 67% !important;
+    cursor: pointer;
   }
 }
