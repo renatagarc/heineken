@@ -33,7 +33,7 @@ const fn_zap = function () {
       const selected_number = numbers[random_position] || numbers[0];
       const urlSearchParams = new URLSearchParams(window.location.search);
       const params = Object.fromEntries(urlSearchParams.entries());
-      const text = `Olá! Quero me cadastrar, para participar das promoções da Heineken!`
+      const text = `Boas-vindas a Heineken! O que eu posso fazer por você hoje?`
       window.location.href = `https://api.whatsapp.com/send?phone=55${params.numbers || selected_number}&text=${encodeURIComponent(text)}`;
     })
 

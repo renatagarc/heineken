@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgba(0, 113, 37, 1);
+}
+
+#logo_drink {
+  max-width: 406px;
+  width: 100%;
+  height: auto;
+}
+
+#img_all {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
 .message_refused {
   display: none;
 }
@@ -87,7 +103,8 @@ nav .zap-btn {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 41% !important;
+  width: auto;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -146,7 +163,7 @@ section .imgbx {
 }
 
 section .imgbx img {
-  max-height: 650px;
+  max-height: 460px;
 }
 
 section .content p {
@@ -399,7 +416,7 @@ section {
   }
 
   section .imgbx img {
-    max-height: 700px;
+    max-height: 413px;
   }
 }
 
@@ -460,12 +477,18 @@ section {
   }
 
   section .imgbx img {
-    max-height: 650px;
+    max-height: 460px;
     margin-top: 20%;
   }
 }
 
 @media (max-width: 480px) {
+  #logo_drink {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+  }
+  
   section .content {
     position: relative;
     width: 100%;
@@ -481,6 +504,81 @@ section {
   section .imgbx img {
     margin-top: 30%;
     max-height: 480px;
+  }
+
+  #about .content {
+    left: 0%;
+  }
+
+  #about .content .about_body {
+    flex-direction: column;
+  }
+
+  #about .content .about_body .about_info {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  #about .content .about_body .about_video_message {
+    width: 100%;
+  }
+
+  section .content p {
+    color: #fff;
+    font-size: 1.2em;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .social {
+    color: #fff;
+    display: flex;
+  }
+
+  .social li {
+    list-style: none;
+  }
+
+  .social li a i {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .zap-btn2 {
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 67% !important;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 393px) {
+  #logo_drink {
+    max-width: 250px;
+  }
+  
+  section .content {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    padding: 20px;
+  }
+
+  section .imgbx {
+    position: relative;
+  }
+
+  section .imgbx img {
+    margin-top: 30%;
+    max-height: 260px;
   }
 
   #about .content {
